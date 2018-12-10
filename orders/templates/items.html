@@ -1,0 +1,15 @@
+<!doctype>
+<html>
+    <body>
+        <form>
+            <input type="text" name="q">
+            <input type="submit" name="Submit">
+        </form>
+        <h3>Items</h3>
+        <ul>
+        {% for name in rows %}
+            <li>{{ name }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
